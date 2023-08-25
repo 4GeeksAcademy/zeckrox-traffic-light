@@ -1,12 +1,68 @@
+body{
+    background-color: cornflowerblue;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* 
+.traffic-pole{
+    width:30px;
+    height:150px;
+    background-color: black;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.traffic-light{
+    width:200px;
+    height:500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+}
 
-*/
+.light{
+    width:75%;
+    height:50%;
+    border-radius: 50%;
+    margin: 5%;
+}
+
+.light-red{
+    background: darkred;
+}
+
+.light-yellow{
+    background: darkgoldenrod;
+}
+
+.light-green{
+    background: darkgreen;
+}
+
+.active-red{
+    background: red;
+
+    -webkit-box-shadow:0px 0px 42px 21px rgba(255,51,51,0.81);
+-moz-box-shadow: 0px 0px 42px 21px rgba(255,51,51,0.81);
+box-shadow: 0px 0px 42px 21px rgba(255,51,51,0.81);
+}
+
+.active-yellow{
+    background: yellow;
+
+    -webkit-box-shadow:0px 0px 42px 21px rgba(255,228,51,0.81);
+-moz-box-shadow: 0px 0px 42px 21px rgba(255,228,51,0.81);
+box-shadow: 0px 0px 42px 21px rgba(255,228,51,0.81);
+}
+
+.active-green{
+    background: rgb(3, 224, 3);
+
+    -webkit-box-shadow:0px 0px 42px 21px rgba(51,255,99,0.81);
+-moz-box-shadow: 0px 0px 42px 21px rgba(51,255,99,0.81);
+box-shadow: 0px 0px 42px 21px rgba(51,255,99,0.81);
+}
